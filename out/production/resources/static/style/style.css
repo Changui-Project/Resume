@@ -108,7 +108,7 @@ ul{
 
 hr {
     opacity: 40%;
-    margin: 2.5rem 0px 2.5rem 0px;
+    margin: 2.5rem 0px 1.5rem 0px;
     height: 1.5px;
     background-color: black;
 }
@@ -125,6 +125,7 @@ hr {
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 2.5rem;
+    margin-top: 3rem;
 }
 
 #mobileMessage {
