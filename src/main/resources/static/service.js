@@ -77,3 +77,25 @@ fetch('component/modal.html')
         });
     })
     .catch(error => console.error('Error loading modal:', error));
+
+
+// 모바일 환경 감지
+function isMobile() {
+    return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+}
+
+// 메시지 표시
+function showMessage() {
+    const messageElement = document.getElementById('mobileMessage');
+    messageElement.style.display = 'block';
+
+    // 3초 후 메시지 숨기기
+    setTimeout(() => {
+        messageElement.style.display = 'none';
+    }, 3000);
+}
+
+// 메시지를 1회만 표시하기 위한 로직
+if (isMobile()) {
+    showMessage();
+}
