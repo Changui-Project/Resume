@@ -1,0 +1,51 @@
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.title-name{
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.title-channel{
+    font-family: "GmarketSansMedium700";
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.title-channel-name {
+    color: black;
+    font-size: 18px;
+    margin: 0.5rem 0.7rem 0px 0px;
+}
+
+.title-channel a img{
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+    box-shadow:
+            0 0 0 0 transparent,
+            0 0 0 1px rgba(17, 24, 39, .2), /* 더 진한 경계선 */
+            0 30px 35px -5px rgba(51, 65, 85, .3), /* 더 진한 그림자 */
+            0 8px 10px -6px rgba(51, 65, 85, .3); /* 더 진한 그림자 */
+    text-decoration: none;
+    font-size: 22px;
+    margin-bottom: 0.25rem;
+}
+
+.title-contact{
+    margin-top : 0.5rem
+}
+
+.title-cursor{
+    cursor: pointer;
+}

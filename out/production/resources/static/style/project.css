@@ -1,0 +1,50 @@
+
+@import "style.css";
+
+.project-github{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.project-github-img{
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+
+.project-name{
+  vertical-align: middle;
+  font-size: large;
+  font-family: GmarketSansMedium;
+}
+
+.project-date-range{
+  font-weight: lighter;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+
+.project-description{
+  font-weight: lighter;
+  font-size: small;
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+.project-tech-stacks{
+  justify-items: left;
+  font-family: GmarketSansMedium300;
+}
+
+.project-tech-stack{
+  margin-left: 0.3rem;
+}
+
+.project-works{
+  list-style: disc;
+}
+
+.project-box{
+  margin-bottom: 2rem;
+}
