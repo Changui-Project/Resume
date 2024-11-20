@@ -95,11 +95,13 @@ table {
 
 li {
     font-family: GmarketSansMedium300;
-    font-weight: lighter;
+    font-weight: normal;
     margin-bottom: 0.5rem;
 }
 
 ul{
+    color: dimgrey;
+    line-height: 1.4rem;
     list-style: disc;
     margin-top: 2rem;
 }
