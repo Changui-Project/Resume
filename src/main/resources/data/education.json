@@ -1,38 +1,11 @@
 [
   {
-    "name": "차세대 정보보안 연구실",
+    "name": "학습한 기관 세부 이름",
     "startDate": "2023-01-01",
     "endDate": "2024-11-21",
-    "description": "학부 연구생으로 활동하였다.",
-    "agency": "계명대학교 컴퓨터공학과",
-    "evidenceUrl": "",
-    "isProgress": true
-  },
-  {
-    "name": "계명대학교 컴퓨터공학과",
-    "startDate": "2019-03-01",
-    "endDate": "2024-11-21",
-    "description": "학부생",
-    "agency": "계명대학교",
-    "evidenceUrl": "",
-    "isProgress": true
-  },
-  {
-    "name": "멋쟁이사자처럼 11기",
-    "startDate": "2023-03-01",
-    "endDate": "2023-12-31",
-    "description": "멋쟁이사자처럼 11기 동아리원으로 활동하였다.",
-    "agency": "멋쟁이 사자처럼",
-    "evidenceUrl": "",
-    "isProgress": false
-  },
-  {
-    "name": "멋쟁이사자처럼 12기 운영진",
-    "startDate": "2024-01-01",
-    "endDate": "2024-11-21",
-    "description": "멋쟁이사자처럼 12기 운영진으로 조별 스터디 및 동아리를 운영하였다.",
-    "agency": "멋쟁이 사자처럼",
-    "evidenceUrl": "",
+    "description": "간단한 활동 설명",
+    "agency": "큰 분류의 기관 이름",
+    "evidenceUrl": "증거나 보여줄 링크",
     "isProgress": true
   }
 ]

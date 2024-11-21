@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="title">
-            <p style="color: grey; margin-top: 0.5rem">Backend Developer</p>
+            <p style="color: grey; margin-top: 0.5rem" th:text="${user.job}">Backend Developer</p>
             <div class="title-channel">
                 <p class="title-contact">Contact Me. &nbsp</p>
                 <a class="title-contact title-cursor" th:onclick="copy_email([[${user.emailLink}]])">
@@ -51,7 +51,7 @@
             </ul>
         </div>
         <hr>
-        <div>
+        <div th:if="${projects}">
             <p class="header">Project</p>
             <div class="project-box" th:each="project : ${projects}">
                 <div style="margin-bottom: 0.4rem">
@@ -70,11 +70,11 @@
                     <li th:each="work : ${project.works}" th:text="${work}"></li>
                 </ul>
             </div>
+            <hr>
         </div>
-        <hr>
-        <div>
+        <div th:if="${prizes}">
             <p class="header">Prize</p>
-            <div class="project-box" th:each="prize : ${prizes}">
+            <div class="project-box" th:each="prize : ${prizes}" >
                 <div style="margin-bottom: 0.4rem">
                         <span class="prize-title">
                             <div>
@@ -91,10 +91,10 @@
                 <p class="project-date-range" th:text="${prize.projectName}"></p>
                 <p class="project-description" th:text="${prize.description}"></p>
             </div>
+            <hr>
         </div>
-        <hr>
         <div id="modalContainer"></div>
-        <div>
+        <div th:if="${educations}">
             <p class="header">Education</p>
             <div class="project-box" th:each="edu : ${educations}">
                 <div style="margin-bottom: 0.4rem">
@@ -114,7 +114,7 @@
             </div>
             <hr>
         </div>
-        <div>
+        <div th:if="${papers}">
             <p class="header">Paper</p>
             <div class="project-box" th:each="paper : ${papers}">
                 <div style="margin-bottom: 0.4rem">

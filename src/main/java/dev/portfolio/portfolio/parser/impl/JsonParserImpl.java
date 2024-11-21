@@ -1,5 +1,6 @@
 package dev.portfolio.portfolio.parser.impl;
 
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.portfolio.portfolio.parser.JsonParser;
 import java.io.IOException;
@@ -33,7 +34,11 @@ public class JsonParserImpl implements JsonParser {
     @Override
     public <T> List<T> parseJsonToDTOList(final Class<T> clazz, final String path) throws IOException {
         Resource resource = resourceLoader.getResource(String.format(JSON_PATH_FORMAT, path));
-        return objectMapper.readValue(resource.getInputStream(),
-                objectMapper.getTypeFactory().constructCollectionType(List.class, clazz));
+        try {
+            return objectMapper.readValue(resource.getInputStream(),
+                    objectMapper.getTypeFactory().constructCollectionType(List.class, clazz));
+        } catch (Exception e){
+            return null;
+        }
     }
 }

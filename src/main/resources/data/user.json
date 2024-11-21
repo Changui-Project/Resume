@@ -1,11 +1,11 @@
 {
-  "name": "이창의",
-  "githubLink": "https://github.com/changuii",
-  "blogLink": "https://g-db.tistory.com/",
-  "emailLink": "rhljh7410@gmail.com",
+  "name": "이름",
+  "job" : "Backend/Frontend Developer, Project Manager",
+  "githubLink": "github주소",
+  "blogLink": "blog주소",
+  "emailLink": "이메일",
   "introductions": [
-    "백엔드 개발자가 되기 위해 노력하고 있습니다.",
-    "모든 것에는 이유가 있듯이 사소한 것에도 <span class=\"inline-code\">이유를 찾기 위해 노력</span>합니다.",
-    "계명대학교에 재학중입니다."
+    "소개",
+    "<span class=\"inline-code\">inline style 문자열</span>"
   ]
 }
