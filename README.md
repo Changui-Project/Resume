@@ -94,6 +94,24 @@
 ]
 ```
 
+### Prize 정보 추가
+```json
+[
+  {
+    "name": "대회 이름",
+    "projectName": "출품한 프로젝트 이름",
+    "agency": "수상 기관",
+    "prize": "수상한 상 이름",
+    "date": "2023-10-31",
+    "description": "간단한 설명",
+    "imageUrl": "/img/prize.png"
+  }
+]
+```
+- 사용할 이미지는 `src/main/resource/images` 경로에 넣은 후 `/img/{파일명}`의 형식으로 입력해주세요
+- 배포 환경에 따라 다르지만, 한글 이름을 가진 이미지는 빌드에 실패할 수 있습니다.
+
+
 ### Education 정보 추가
 ```json
 [
