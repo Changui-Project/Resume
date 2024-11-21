@@ -28,7 +28,7 @@ public class JsonParserImpl implements JsonParser {
     @Override
     public <T> T parseJsonToDTO(final Class<T> clazz, final String path) throws IOException {
         Resource resource = resourceLoader.getResource(String.format(JSON_PATH_FORMAT, path));
-        return objectMapper.readValue(resource.getFile(), clazz);
+        return objectMapper.readValue(resource.getInputStream(), clazz);
     }
 
     @Override
