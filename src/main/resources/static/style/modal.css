@@ -16,8 +16,9 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    display: inline-flex; /* 내부 콘텐츠 크기에 맞게 조정 */
+    max-width: 28%;
+    justify-content: center;
     position: relative;
 }
 
@@ -32,4 +33,13 @@
 
 .open-modal-btn:hover {
     background: #0056b3;
+}
+
+.modal img {
+    display: block; /* 이미지를 블록 요소로 설정 (중앙 정렬 문제 해결) */
+    margin: 0 auto; /* 중앙 정렬 */
+    max-width: 100%; /* 모달 너비를 넘지 않도록 제한 */
+    height: auto; /* 비율 유지 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+    border-radius: 8px; /* 부드러운 모서리 (선택 사항) */
 }

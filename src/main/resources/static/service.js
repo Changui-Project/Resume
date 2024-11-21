@@ -74,7 +74,7 @@ fetch('component/modal.html')
 
         // 동적으로 로드된 모달 엘리먼트 참조
         const modalOverlay = document.getElementById('modalOverlay');
-        const modalContent = modalOverlay.querySelector('.modal-content'); // 이미지가 들어갈 영역
+        const modalContent = modalOverlay.querySelector('.modal'); // 이미지가 들어갈 영역
 
         // 모달 열기 함수
         window.openModal = (imageUrl) => {
