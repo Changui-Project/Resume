@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806fae05-8e16-4434-a5bc-b7558241f34a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/경북대학교-2023-우수상.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/계명대학교-2024-금상.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/정보통신윤리학회-2023-우수상.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/EducationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/EducationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/PaperDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/PaperDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/PrizeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/PrizeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/dto/ProjectDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/EducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/PaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/PaperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/PrizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/PrizeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/EducationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/EducationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/PaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/PaperServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/PrizeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/PrizeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/component/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/portfolio/portfolio/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/education.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/education.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/paper.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/paper.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/prize.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/prize.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/project.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +137,7 @@
       <workItem from="1731921551223" duration="3493000" />
       <workItem from="1731992021349" duration="25873000" />
       <workItem from="1732084132685" duration="12509000" />
-      <workItem from="1732103710748" duration="10597000" />
+      <workItem from="1732103710748" duration="13916000" />
     </task>
     <servers />
   </component>

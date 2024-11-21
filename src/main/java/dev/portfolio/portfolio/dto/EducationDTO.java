@@ -1,5 +1,6 @@
 package dev.portfolio.portfolio.dto;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 import lombok.Getter;
@@ -21,12 +22,13 @@ public class EducationDTO {
     @JsonProperty("isProgress")
     private final boolean isProgress;
 
-    public EducationDTO(@JsonProperty("name") final String name, @JsonProperty("startDate") final LocalDate startDate,
-                        @JsonProperty("endDate") final LocalDate endDate,
+    @JsonCreator
+    public EducationDTO(@JsonProperty("name") final String name, @JsonProperty("start-date") final LocalDate startDate,
+                        @JsonProperty("end-date") final LocalDate endDate,
                         @JsonProperty("description") final String description,
                         @JsonProperty("agency") final String agency,
-                        @JsonProperty("evidenceUrl") final String evidenceUrl,
-                        @JsonProperty("isProgress") final boolean isProgress) {
+                        @JsonProperty("evidence-url") final String evidenceUrl,
+                        @JsonProperty("is-progress") final boolean isProgress) {
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;

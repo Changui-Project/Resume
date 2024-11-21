@@ -6,6 +6,7 @@ import dev.portfolio.portfolio.service.PaperService;
 import dev.portfolio.portfolio.service.PrizeService;
 import dev.portfolio.portfolio.service.ProjectService;
 import dev.portfolio.portfolio.service.UserService;
+import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,7 +44,7 @@ public class MainController {
 
 
     @GetMapping
-    public String getMainPage(Model model) {
+    public String getMainPage(Model model) throws IOException {
         model.addAttribute(PROJECT, projectService.readAllProject());
         model.addAttribute(USER, userService.readUser());
         model.addAttribute(PRIZE, prizeService.readAllPrize());

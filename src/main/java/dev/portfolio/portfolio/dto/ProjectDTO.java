@@ -1,5 +1,6 @@
 package dev.portfolio.portfolio.dto;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 import java.util.List;
@@ -23,12 +24,13 @@ public class ProjectDTO {
     @JsonProperty("githubLink")
     private final String githubLink;
 
-    public ProjectDTO(@JsonProperty("name") final String name, @JsonProperty final String description,
-                      @JsonProperty("startDate") final LocalDate startDate,
-                      @JsonProperty("endDate") final LocalDate endDate,
-                      @JsonProperty("techStacks") final List<String> techStacks,
+    @JsonCreator
+    public ProjectDTO(@JsonProperty("name") final String name, @JsonProperty("description") final String description,
+                      @JsonProperty("start-date") final LocalDate startDate,
+                      @JsonProperty("end-date") final LocalDate endDate,
+                      @JsonProperty("tech-stacks") final List<String> techStacks,
                       @JsonProperty("works") final List<String> works,
-                      @JsonProperty("githubLink") final String githubLink
+                      @JsonProperty("github-link") final String githubLink
     ) {
         this.name = name;
         this.description = description;

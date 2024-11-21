@@ -1,5 +1,6 @@
 package dev.portfolio.portfolio.dto;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.time.LocalDate;
 import java.util.List;
@@ -20,9 +21,10 @@ public class PaperDTO {
     @JsonProperty("type")
     private final String type;
 
+    @JsonCreator
     public PaperDTO(@JsonProperty("name") final String name, @JsonProperty("date") final LocalDate date,
                     @JsonProperty("descriptions") final List<String> descriptions,
-                    @JsonProperty("paperUrl") final String paperUrl, @JsonProperty("institute") final String institute,
+                    @JsonProperty("paper-url") final String paperUrl, @JsonProperty("institute") final String institute,
                     @JsonProperty("type") final String type) {
         this.name = name;
         this.date = date;
