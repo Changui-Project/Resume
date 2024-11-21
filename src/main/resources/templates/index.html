@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
           integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -77,13 +77,13 @@
             <div class="project-box" th:each="prize : ${prizes}">
                 <div style="margin-bottom: 0.4rem">
                         <span class="prize-title">
-                            <span>
+                            <div>
                                 <a th:onclick="openModal([[${prize.imageUrl}]])" style="cursor: pointer">
                                     <i class="fa-solid fa-image fa-beat fa-lg"></i>
                                     <span class="project-name" th:text="${prize.name}"></span>
                                 </a>
                                 <span class="inline-code" th:text="${prize.prize}"></span>
-                            </span>
+                            </div>
                             <span class="prize-agency" th:text="${prize.agency}"></span>
                         </span>
                 </div>
@@ -98,16 +98,16 @@
             <p class="header">Education</p>
             <div class="project-box" th:each="edu : ${educations}">
                 <div style="margin-bottom: 0.4rem">
-                        <span class="prize-title">
-                            <span>
+                        <div class="prize-title">
+                            <div>
                                 <a class="project-github" target="_blank" style="cursor: pointer" th:href="${edu.evidenceUrl}">
                                     <i class="fa-solid fa-building-columns fa-beat fa-lg"></i>
                                     <span class="project-name" th:text="${edu.name}"></span>
                                 </a>
                                 <span class="inline-code" th:text="${edu.isProgress} ? '진행중' : '수료'"></span>
-                            </span>
+                            </div>
                             <span class="prize-agency" th:text="${edu.agency}"></span>
-                        </span>
+                        </div>
                 </div>
                 <p class="project-date-range" th:text="${edu.startDate} + ' ~ ' + ${edu.endDate}"></p>
                 <p class="project-description" th:text="${edu.description}"></p>
