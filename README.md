@@ -1,17 +1,25 @@
 # Resume Project
 
-## 프로젝트 소개
-간단하게 resume를 만들 수 있는 프로젝트입니다.
+## Table of Contents
 
-### 사용 기술
+[1. Introduce](#introduce)  
+[2. What I Did](#what-i-did)  
+[3. View](#view)  
+[4. Tech Stack](#tech-stack)  
+[5. How To Use](#how-to-use)
 
-<center>
-<img src="https://skillicons.dev/icons?i=java,spring&theme=light">
-</center>
+## Introduce
+간단하게 resume를 만들 수 있는 웹 서비스로 json을 작성하여 만들 수 있습니다.  
+<sup>2024. 11. 18. ~ 2024. 11. 21.</sup>   
 
-- `Java 17`, `Spring Boot`, `Thymeleaf`
+[배포된 사이트](https://resume.koyeb.app)
 
-### Resume
+## What I Did
+- thymeleaf를 이용하여 화면 구현
+- JSON을 파싱하여 데이터 베이스로 사용하도록 구현
+- koyeb 서비스를 활용해 CICD 구축
+
+## View
 
 ![resume](./assets/resume.png)
 
@@ -44,7 +52,16 @@
 - 논문명을 클릭하여 논문 링크로 이동할 수 있다.
 
 
-# 사용 방법
+## Tech Stack
+
+<center>
+<img src="https://skillicons.dev/icons?i=java,spring&theme=light">
+</center>
+
+- `Java 17`, `Spring Boot`, `Thymeleaf`
+
+
+## How To Use
 - 각 정보들 : `src/main/resource/data` 경로에 필요한 데이터를 json으로 작성한다.
 - prize에서 사용할 이미지 : `src/main/resource/images` 경로에 필요한 이미지를 넣는다.   
 - 각 정보들은 입력하지 않는다면, resume에 표시되지 않는다.
